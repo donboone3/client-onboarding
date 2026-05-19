@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Onboarding — Cowork OS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#e02020',
+            surface: '#1a1a1a',
+            'surface-mid': '#2c2c2c',
+            'surface-border': '#2a2a2a',
+            ink: '#cccccc',
+            muted: '#888888',
+          },
+          fontFamily: {
+            sans: ['"Segoe UI"', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body { background-color: #0a0a0a; }
+    .step-done { text-decoration: line-through; opacity: 0.4; }
+    input[type="checkbox"]:checked + label { text-decoration: line-through; opacity: 0.4; }
+  </style>
+</head>
+<body class="font-sans text-white leading-relaxed">
+
+  <!-- HERO -->
+  <div class="border-b-[3px] border-brand text-center px-6 py-14 bg-gradient-to-br from-[#0a0a0a] via-[#1a0505] to-[#2a0808]">
+    <span class="inline-block bg-brand text-white text-[11px] font-bold tracking-[2px] uppercase px-4 py-1.5 rounded-full mb-5">New Client Setup</span>
+    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-3">Social Media<br><span class="text-brand">Client Onboarding</span></h1>
+    <p class="text-muted text-base max-w-lg mx-auto">Follow these steps to connect your accounts. Most take under 5 minutes each. No password sharing — everything is done through official admin tools.</p>
+    <p class="text-[#444] text-sm mt-5">Cowork OS &nbsp;·&nbsp; Social Media Management</p>
+  </div>
+
+  <div class="max-w-3xl mx-auto px-6 py-12 space-y-4">
+
+    <!-- INTRO CARD -->
+    <div class="bg-surface border border-surface-border rounded-xl p-6 mb-8">
+      <h2 class="font-bold text-lg mb-2">Before You Start</h2>
+      <p class="text-ink text-sm mb-4">You'll need to be logged in to each platform on your phone or computer as you go through these steps. Have your logins ready for:</p>
+      <div class="flex flex-wrap gap-2">
+        <span class="bg-[#1877f2]/20 text-blue-300 border border-[#1877f2]/30 text-xs font-semibold px-3 py-1.5 rounded-full">Facebook</span>
+        <span class="bg-pink-600/20 text-pink-300 border border-pink-600/30 text-xs font-semibold px-3 py-1.5 rounded-full">Instagram</span>
+        <span class="bg-green-600/20 text-green-300 border border-green-600/30 text-xs font-semibold px-3 py-1.5 rounded-full">Google</span>
+        <span class="bg-[#0077b5]/20 text-sky-300 border border-[#0077b5]/30 text-xs font-semibold px-3 py-1.5 rounded-full">LinkedIn</span>
+        <span class="bg-red-700/20 text-red-300 border border-red-700/30 text-xs font-semibold px-3 py-1.5 rounded-full">Yelp</span>
+      </div>
+      <p class="text-muted text-xs mt-4">Questions? Text or email us and we'll walk you through it live.</p>
+    </div>
+
+    <!-- STEP 1 — Meta Business Suite -->
+    <div class="bg-surface border border-surface-border rounded-xl overflow-hidden">
+      <div class="flex items-center gap-4 px-6 py-4 border-b border-white/5 bg-[#1877f2]/5">
+        <span class="shrink-0 w-9 h-9 rounded-full bg-[#1877f2] text-white text-sm font-bold flex items-center justify-center">1</span>
+        <div class="flex-1">
+          <p class="font-bold">Connect Facebook & Instagram via Meta Business Suite</p>
+          <p class="text-muted text-xs mt-0.5">business.facebook.com — manages both platforms in one place</p>
+        </div>
+        <span class="shrink-0 bg-green-500/20 text-green-300 text-xs font-bold px-2 py-1 rounded-full">Free</span>
+      </div>
+      <div class="px-6 py-5 space-y-3">
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">a.</span>
+          <span>Go to <a href="https://business.facebook.com" target="_blank" class="text-white font-semibold underline underline-offset-2">business.facebook.com</a> and log in with your personal Facebook account</span>
+        </div>
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">b.</span>
+          <span>Click <span class="bg-white/10 text-white text-xs font-mono px-2 py-0.5 rounded">Settings → Business Assets → Add Assets</span> and add your Facebook Page and Instagram account</span>
+        </div>
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">c.</span>
+          <span>Go to <span class="bg-white/10 text-white text-xs font-mono px-2 py-0.5 rounded">Settings → Partners → Add Partner</span> and enter this Partner ID: <span class="text-white font-bold bg-brand/20 border border-brand/30 px-2 py-0.5 rounded font-mono text-xs">[ YOUR META PARTNER ID ]</span></span>
+        </div>
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">d.</span>
+          <span>Under Partner permissions, enable: <strong class="text-white">Manage Page, Create Ads, View Insights</strong> — then click Save</span>
+        </div>
+        <div class="mt-4 bg-blue-500/5 border border-blue-500/20 rounded-lg px-4 py-3">
+          <p class="text-blue-300 text-xs font-semibold mb-1">Why this way?</p>
+          <p class="text-muted text-xs">Adding us as a Partner means we manage your accounts through our own Business Portfolio — you never share a password and you can remove access at any time in one click.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 2 — Instagram Business -->
+    <div class="bg-surface border border-surface-border rounded-xl overflow-hidden">
+      <div class="flex items-center gap-4 px-6 py-4 border-b border-white/5 bg-pink-600/5">
+        <span class="shrink-0 w-9 h-9 rounded-full text-white text-sm font-bold flex items-center justify-center" style="background: linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)">2</span>
+        <div class="flex-1">
+          <p class="font-bold">Switch Instagram to a Business Account</p>
+          <p class="text-muted text-xs mt-0.5">Required for scheduling, analytics, and contact buttons to work</p>
+        </div>
+        <span class="shrink-0 bg-pink-500/20 text-pink-300 text-xs font-bold px-2 py-1 rounded-full">Instagram</span>
+      </div>
+      <div class="px-6 py-5 space-y-3">
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">a.</span>
+          <span>Open the Instagram app → tap your <strong class="text-white">profile picture</strong> → tap the <strong class="text-white">three lines ☰</strong> in the top right corner</span>
+        </div>
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">b.</span>
+          <span>Go to <span class="bg-white/10 text-white text-xs font-mono px-2 py-0.5 rounded">Settings & Privacy → Account type → Switch to Professional Account</span></span>
+        </div>
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">c.</span>
+          <span>Choose <strong class="text-white">Business</strong> (not Creator) → select your category → connect your Facebook Business Page when prompted</span>
+        </div>
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">d.</span>
+          <span>Once done, Instagram will be accessible through the Meta Business Suite connection in Step 1 — no extra steps needed</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 3 — Google Business -->
+    <div class="bg-surface border border-surface-border rounded-xl overflow-hidden">
+      <div class="flex items-center gap-4 px-6 py-4 border-b border-white/5 bg-green-600/5">
+        <span class="shrink-0 w-9 h-9 rounded-full bg-[#34a853] text-white text-sm font-bold flex items-center justify-center">3</span>
+        <div class="flex-1">
+          <p class="font-bold">Add a Manager to Google Business Profile</p>
+          <p class="text-muted text-xs mt-0.5">business.google.com — for posts, photos, and review responses</p>
+        </div>
+        <span class="shrink-0 bg-green-500/20 text-green-300 text-xs font-bold px-2 py-1 rounded-full">Google</span>
+      </div>
+      <div class="px-6 py-5 space-y-3">
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">a.</span>
+          <span>Go to <a href="https://business.google.com" target="_blank" class="text-white font-semibold underline underline-offset-2">business.google.com</a> and sign in with the Google account that owns your business listing</span>
+        </div>
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">b.</span>
+          <span>Click <span class="bg-white/10 text-white text-xs font-mono px-2 py-0.5 rounded">Business Profile Settings → Managers → Add</span></span>
+        </div>
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">c.</span>
+          <span>Enter <span class="text-white font-bold bg-brand/20 border border-brand/30 px-2 py-0.5 rounded font-mono text-xs">[ YOUR GMAIL ADDRESS ]</span> and set the role to <strong class="text-white">Manager</strong></span>
+        </div>
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">d.</span>
+          <span>Click <strong class="text-white">Invite</strong> — we'll accept from our end and will have access within minutes</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 4 — LinkedIn -->
+    <div class="bg-surface border border-surface-border rounded-xl overflow-hidden">
+      <div class="flex items-center gap-4 px-6 py-4 border-b border-white/5 bg-[#0077b5]/5">
+        <span class="shrink-0 w-9 h-9 rounded-full bg-[#0077b5] text-white text-sm font-bold flex items-center justify-center">4</span>
+        <div class="flex-1">
+          <p class="font-bold">Add a LinkedIn Page Admin</p>
+          <p class="text-muted text-xs mt-0.5">For B2B content, fleet case studies, and company page management</p>
+        </div>
+        <span class="shrink-0 bg-sky-500/20 text-sky-300 text-xs font-bold px-2 py-1 rounded-full">LinkedIn</span>
+      </div>
+      <div class="px-6 py-5 space-y-3">
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">a.</span>
+          <span>Go to your LinkedIn Company Page and click <span class="bg-white/10 text-white text-xs font-mono px-2 py-0.5 rounded">Admin Tools → Manage Admins</span> in the top right</span>
+        </div>
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">b.</span>
+          <span>Click <strong class="text-white">Add Admin</strong> → search for <span class="text-white font-bold bg-brand/20 border border-brand/30 px-2 py-0.5 rounded font-mono text-xs">[ YOUR LINKEDIN NAME/EMAIL ]</span></span>
+        </div>
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">c.</span>
+          <span>Set role to <strong class="text-white">Super Admin</strong> and click <strong class="text-white">Save</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 5 — Yelp -->
+    <div class="bg-surface border border-surface-border rounded-xl overflow-hidden">
+      <div class="flex items-center gap-4 px-6 py-4 border-b border-white/5 bg-red-700/5">
+        <span class="shrink-0 w-9 h-9 rounded-full bg-[#d32323] text-white text-sm font-bold flex items-center justify-center">5</span>
+        <div class="flex-1">
+          <p class="font-bold">Share Yelp for Business Access</p>
+          <p class="text-muted text-xs mt-0.5">biz.yelp.com — Yelp doesn't support multi-user admin, use a password manager</p>
+        </div>
+        <span class="shrink-0 bg-red-500/20 text-red-300 text-xs font-bold px-2 py-1 rounded-full">Yelp</span>
+      </div>
+      <div class="px-6 py-5 space-y-3">
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">a.</span>
+          <span>Go to <a href="https://biz.yelp.com" target="_blank" class="text-white font-semibold underline underline-offset-2">biz.yelp.com</a> and confirm your business listing is claimed and up to date</span>
+        </div>
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">b.</span>
+          <span>Share your login credentials securely using <a href="https://1password.com" target="_blank" class="text-white font-semibold underline underline-offset-2">1Password</a> or <a href="https://lastpass.com" target="_blank" class="text-white font-semibold underline underline-offset-2">LastPass</a> — never send passwords via text or email</span>
+        </div>
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">c.</span>
+          <span>If you don't have a password manager, we recommend setting up a free <strong class="text-white">1Password</strong> account — it takes 2 minutes and keeps your credentials safe</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 6 — Buffer -->
+    <div class="bg-surface border border-surface-border rounded-xl overflow-hidden">
+      <div class="flex items-center gap-4 px-6 py-4 border-b border-white/5 bg-[#2c4bff]/5">
+        <span class="shrink-0 w-9 h-9 rounded-full bg-[#2c4bff] text-white text-sm font-bold flex items-center justify-center">6</span>
+        <div class="flex-1">
+          <p class="font-bold">Approve Buffer Connection</p>
+          <p class="text-muted text-xs mt-0.5">buffer.com — we'll send you a team invite once steps 1–5 are complete</p>
+        </div>
+        <span class="shrink-0 bg-indigo-500/20 text-indigo-300 text-xs font-bold px-2 py-1 rounded-full">Scheduling</span>
+      </div>
+      <div class="px-6 py-5 space-y-3">
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">a.</span>
+          <span>We'll send a Buffer team invite to your email once the platform connections above are set up</span>
+        </div>
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">b.</span>
+          <span>Accept the invite — this gives you visibility into everything we schedule so you always know what's going out</span>
+        </div>
+        <div class="flex gap-3 text-sm text-ink items-start">
+          <span class="shrink-0 text-brand font-bold w-5">c.</span>
+          <span>You can approve, edit, or pause any post before it goes live — full transparency, always</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKLIST -->
+    <div class="bg-surface border border-brand/30 rounded-xl p-6 mt-8">
+      <h2 class="font-bold text-xl mb-1">Onboarding Checklist</h2>
+      <p class="text-muted text-sm mb-6">Check off each item as you complete it. Once all are done, we're ready to launch.</p>
+      <div class="space-y-3">
+        <label class="flex items-center gap-3 cursor-pointer group">
+          <input type="checkbox" class="w-5 h-5 rounded accent-brand cursor-pointer" />
+          <span class="text-ink text-sm group-hover:text-white transition-colors">Meta Business Suite — Partner access granted (Facebook + Instagram)</span>
+        </label>
+        <label class="flex items-center gap-3 cursor-pointer group">
+          <input type="checkbox" class="w-5 h-5 rounded accent-brand cursor-pointer" />
+          <span class="text-ink text-sm group-hover:text-white transition-colors">Instagram switched to Business Account</span>
+        </label>
+        <label class="flex items-center gap-3 cursor-pointer group">
+          <input type="checkbox" class="w-5 h-5 rounded accent-brand cursor-pointer" />
+          <span class="text-ink text-sm group-hover:text-white transition-colors">Google Business Profile — Manager access granted</span>
+        </label>
+        <label class="flex items-center gap-3 cursor-pointer group">
+          <input type="checkbox" class="w-5 h-5 rounded accent-brand cursor-pointer" />
+          <span class="text-ink text-sm group-hover:text-white transition-colors">LinkedIn — Super Admin access granted</span>
+        </label>
+        <label class="flex items-center gap-3 cursor-pointer group">
+          <input type="checkbox" class="w-5 h-5 rounded accent-brand cursor-pointer" />
+          <span class="text-ink text-sm group-hover:text-white transition-colors">Yelp login shared securely via password manager</span>
+        </label>
+        <label class="flex items-center gap-3 cursor-pointer group">
+          <input type="checkbox" class="w-5 h-5 rounded accent-brand cursor-pointer" />
+          <span class="text-ink text-sm group-hover:text-white transition-colors">Buffer team invite accepted</span>
+        </label>
+        <label class="flex items-center gap-3 cursor-pointer group">
+          <input type="checkbox" class="w-5 h-5 rounded accent-brand cursor-pointer" />
+          <span class="text-ink text-sm group-hover:text-white transition-colors">Website backend access shared (for blog posts and SEO updates)</span>
+        </label>
+      </div>
+      <div class="mt-6 pt-6 border-t border-white/5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+        <p class="text-muted text-sm">Total setup time: <strong class="text-white">30–45 minutes</strong> — done once, never again.</p>
+        <a href="mailto:" class="inline-block bg-brand hover:bg-brand-dark text-white text-sm font-bold px-5 py-2.5 rounded-lg transition-colors text-center">✓ All Done — Email Us</a>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="pt-6">
+      <h2 class="font-bold text-xl mb-4">Common Questions</h2>
+      <div class="space-y-3">
+        <div class="bg-surface border border-surface-border rounded-xl px-5 py-4">
+          <p class="font-semibold text-sm mb-1">Do you need my passwords?</p>
+          <p class="text-ink text-sm">No — for Facebook, Instagram, Google, and LinkedIn we use official admin/partner access. You only share a password for Yelp, and we recommend doing that through a password manager like 1Password.</p>
+        </div>
+        <div class="bg-surface border border-surface-border rounded-xl px-5 py-4">
+          <p class="font-semibold text-sm mb-1">Can I remove access later?</p>
+          <p class="text-ink text-sm">Yes, at any time. Each platform lets you remove a manager or partner in under 60 seconds. You're always in control.</p>
+        </div>
+        <div class="bg-surface border border-surface-border rounded-xl px-5 py-4">
+          <p class="font-semibold text-sm mb-1">Will I be able to see what gets posted?</p>
+          <p class="text-ink text-sm">Yes — through Buffer you'll have full visibility into the content calendar. You can approve, edit, or remove any post before it goes live.</p>
+        </div>
+        <div class="bg-surface border border-surface-border rounded-xl px-5 py-4">
+          <p class="font-semibold text-sm mb-1">I'm stuck on a step — what do I do?</p>
+          <p class="text-ink text-sm">Text or email us and we'll jump on a quick screen share to walk you through it. Most issues are resolved in under 10 minutes.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/5 text-center py-8 text-muted text-sm mt-8">
+    <p><span class="text-brand font-bold">Cowork OS</span> &nbsp;·&nbsp; Social Media Management</p>
+    <p class="mt-1.5 text-[#333]">Questions? Reach out anytime.</p>
+  </footer>
+
+</body>
+</html>
